@@ -13,5 +13,21 @@ include 'templates/header.php'; ?>
     echo $newPost->title;
     echo $newPost->content;
 ?>
+<h2>List of Post</h2>
+    <?php 
+        $blogList = array(
+            (new BlogPost (2, 'title1', 'content1')),
+            (new BlogPost (3, 'title2', 'content2')),
+            (new BlogPost (4, 'title3', 'content3')),
+            (new BlogPost (5, 'title4', 'content4')),
+        );
 
+        foreach ($blogList as $blog) : ?>
+            <li>
+                <h3>
+                    <?php echo "Blog id: {$blog->id}. Title: {$blog->title}" ; ?>
+                </h3>
+                    <p><?php $blog->content ?></p>
+            </li>
+        <?php endforeach;?>
  <?php include 'templates/footer.php'; ?>
