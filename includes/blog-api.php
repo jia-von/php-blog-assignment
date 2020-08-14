@@ -1,7 +1,7 @@
 <?php
 
 function retrieveArticles() {
-    $responseString = file_get_contents('../data/articles.json');
+    $responseString = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/data/articles.json');
     //var_dump($responseString); -- checked and it's good
 
     //convert response JSON string into a PHP array/object
