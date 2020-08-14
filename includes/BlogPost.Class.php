@@ -2,16 +2,12 @@
 
 class BlogPost 
 {
-    public $id = 1;
-    public $title = 'Default title.';
-    public $content = 'Default content.';
+    public $title = '';
+    public $content = '';
 
     //Create a constructor 
 
-    function __construct( $id = false, $title = false, $content = false) {
-        if(is_integer($id)){
-            $this->id = $id;
-        }
+    function __construct($title = false, $content = false) {
         if(is_string($title)){
             $this->title = $title;
         }
