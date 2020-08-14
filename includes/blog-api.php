@@ -12,8 +12,9 @@ function retrieveArticles() {
             //var_dump($responseObj); -- checked and it's okay
             //Collect the array of results from the response object's 'articles' property
             $articles = $responseObj->articles;
-            //var_dump($articles); -- checked and it's okay
+            //var_dump($articles); --okay
             return $articles;
+
         }
         else
         {

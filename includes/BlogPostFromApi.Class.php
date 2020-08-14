@@ -2,7 +2,7 @@
 include_once 'BlogPost.Class.php';
 
 class BlogPostFromApi extends BlogPost {
-    
+
     public function output(){
         ?>
 
