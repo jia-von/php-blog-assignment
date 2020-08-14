@@ -6,7 +6,7 @@ class BlogPost
     public $title = 'Default title.';
     public $content = 'Default content.';
 
-    //Create a constructor and add array 
+    //Create a constructor 
 
     function __construct( $id = false, $title = false, $content = false) {
         if(is_integer($id)){

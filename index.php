@@ -13,7 +13,7 @@ include 'templates/header.php'; ?>
     echo $newPost->title;
     echo $newPost->content;
 ?>
-<h2>List of Post</h2>
+<h2>List of Post</h2> <!--Array was created to list blog post-->
     <?php 
         $blogList = array(
             (new BlogPost (2, 'title1', 'content1')),
